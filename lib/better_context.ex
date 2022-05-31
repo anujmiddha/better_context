@@ -6,13 +6,13 @@ defmodule BetterContext do
   @doc """
   Creates the CRUD functions for a model in the context. If the model name is `Post`, the generated functions will be
 
-  list_posts
-  get_post(post_id)
-  get_post!(post_id)
-  create_post(attrs \\ %{})
-  update_post(post, attrs)
-  delete_post(post)
-  change_post(post, attrs \\ %{})
+      list_posts
+      get_post(post_id)
+      get_post!(post_id)
+      create_post(attrs \\ %{})
+      update_post(post, attrs)
+      delete_post(post)
+      change_post(post, attrs \\ %{})
   """
   defmacro crud(module, repo, options \\ []) do
     model_name =
